@@ -1,0 +1,226 @@
+<!-- Q51. Does a hyperlink only apply to text?
+No — a hyperlink can wrap around images, buttons, or even entire blocks of content, not just text.
+ 
+Q52. What is a style sheet?
+A style sheet, usually written in CSS, defines how HTML elements should look — their colors, fonts,
+spacing, and layout — separate from the page's content
+
+Q53. Can you create multi-colored text on a web page?
+Yes, by wrapping different parts of the text in <span> tags and applying different colors to each
+through CSS.
+
+Q54. Is it possible to change the color of a bullet?
+Yes, though not directly through a simple attribute — you typically style it using CSS, for example by
+using ::marker or replacing the bullet with a custom one.
+
+Q55. Explain the layout of HTML.
+An HTML document is generally structured with a <head> section for metadata and a <body>
+section for visible content, and within the body, semantic tags like <header> , <main> , and
+<footer> help organize the page logically.
+
+Q56. What is a marquee?
+The <marquee> tag was used to create scrolling text or images, but it's now deprecated — modern
+pages achieve the same animated effect using CSS.
+
+Q57. How to make a picture the background image of a web page?
+Using CSS: 
+body {
+ background-image: url('photo.jpg'); 
+ } 
+
+Q58. How many tags can be used to separate a section of text?
+Common ones include <section> , <article> , <div> , and <hr> , each separating content in
+slightly different, meaningful ways.
+
+Q59. What are empty elements?
+Empty elements don't have any content or closing tag, like
+ <br> , <hr> , and <img> .
+
+ Q60. What is the use of a span tag? Give one example.
+A <span> tag groups inline content so you can style or target just that part, without affecting the
+surrounding text. Example:
+<p>This is <span style="color:red;">important</span> text.</p> 
+
+Q61. What is the use of an iframe tag?
+It allows you to embed another webpage, video, or document directly inside your current page.
+
+Q62. What are entities in HTML?
+Entities are special codes used to display characters that have a reserved meaning in HTML, like
+&lt; for "<" 
+&amp; for "&"
+
+Q63. Why is a URL encoded in HTML?
+URLs are encoded to safely represent characters like spaces or special symbols that aren't allowed
+directly in a URL, ensuring the link works correctly across browsers.
+
+Q64. Is <!DOCTYPE html> an HTML tag?
+Not exactly — it's a declaration, not a tag. It simply tells the browser which version of HTML the
+document is using.
+
+Q65. What is the canvas element in HTML5?
+The <canvas> element provides a blank drawing area where you can render graphics, animations, or
+charts dynamically using JavaScript.
+
+Q66. What is SVG?
+SVG stands for Scalable Vector Graphics — it's an XML-based format for drawing shapes and images
+that stay crisp at any size, unlike regular pixel-based images.
+
+Q67. What are the different new form element types in HTML5?
+HTML5 added types like email , date , number , range , color , and url , giving built-in
+validation and better input controls.
+
+Q68. Is there any need to change web browsers to support HTML5?
+No — most modern browsers already support HTML5 natively. Only very old or outdated browsers
+might need updating.
+
+
+Q69. Which video formats are supported by HTML5?
+
+The commonly supported formats are MP4, WebM, and Ogg, though MP4 has the widest browser
+support.
+
+Q70. Is the audio tag supported in HTML5?
+Yes, the <audio> tag lets you embed and play sound files directly in the browser, without needing
+any external plugin.
+
+Q71. What is the difference between progress and meter tags?
+
+<progress> shows the completion status of a task, like a file upload, while <meter> displays a
+scalar value within a known range, like disk usage or a rating.
+
+Q72. What is the use of the figure tag in HTML5?
+<figure> groups self-contained content like an image, diagram, or code snippet, often paired with a
+caption.
+
+Q73. . What is the use of the figcaption tag in HTML5?
+It provides a caption for the content inside a <figure> element, describing what the image or
+diagram represents.
+
+
+Q74. What is the button tag?
+<button> creates a clickable button that can trigger an action, submit a form, or run JavaScript code.
+
+Q75. What is the use of details and summary tags?
+Together, they create an expandable/collapsible section — <summary> is the visible heading, and
+<details> holds the content that shows or hides when clicked.
+
+Q76. What is the datalist tag?
+<datalist> provides a predefined list of suggestions for an input field, giving users an autocompletestyle dropdown as they type.
+
+Q77. How are tags migrated from HTML4 to HTML5?
+Most basic tags carried over unchanged, but presentation-focused tags like <font> and <center>
+were dropped in favor of CSS, while new semantic and multimedia tags were introduced.
+
+Q78. If I don't put <!DOCTYPE html>, will HTML5 work?
+The page will likely still render, but without the doctype, the browser may switch to "quirks mode,"
+which can cause inconsistent or unexpected layout behavior.
+
+Q79. What is the use of the required attribute in HTML5?
+Adding required to an input field forces the user to fill it in before the form can be submitted, helping
+with basic client-side validation.
+
+Q80. What are the new input types for form validation in HTML5?
+Types like email , url , number , and tel automatically validate the format of what's entered,
+reducing the need for custom JavaScript validation.
+
+Q81. Is HTML case-sensitive or not?
+HTML tags and attributes are not case-sensitive, so <DIV> and <div> work the same way —
+though lowercase is the standard convention.
+
+Q82. When are comments used in HTML? -->
+<!-- comment -->
+<!-- comments are used to leave notes for yourself or other developers in
+the code, without affecting how the page is displayed.
+
+Q83. What are attributes and how do you use them?
+Attributes add extra detail to an element and are placed inside the opening tag, written as
+name="value" — for example-
+ <a href="page.html"> 
+
+Q84. What do you mean by the "for" attribute in a label tag?
+The for attribute links a <label> to a specific input by matching its id , so clicking the label also
+focuses or activates that input.
+
+
+Q85. How to create a hyperlink in HTML?
+Wrap the clickable content in an anchor tag with a destination: 
+<a href="https://example.com">Link text</a>
+
+Q86. Name some common lists used when designing a page.
+Ordered lists, 
+unordered lists,
+ and definition lists 
+ are the three most commonly used to organize content on a page.
+
+
+Q87. Which attribute is required in the input tag?
+While type is technically the most essential to define the kind of input, the name attribute is required
+if you want the input's value submitted with the form.
+
+Q88. What do you mean by markup language and hypertext in HTML?
+A markup language uses tags to describe and structure content, while hypertext refers to text that
+contains clickable links to other documents or pages — both concepts combine in HTML to make the
+interconnected web possible.
+
+
+Q89. How are active links different from normal links?
+An active link refers to the moment a link is being clicked, often styled differently (using :active in
+CSS) to give the user visual feedback, while a normal link refers to its default, unclicked state.
+
+Q90. What happens if there is no text between tags? Does this affect display?
+If a tag is left empty, the browser simply renders nothing for that element — it won't break the page, but
+the space it would have occupied may look different depending on the tag.
+
+
+Q91. What are the limits of the text field size?
+You can control the visible width using the size attribute and limit how many characters can be typed
+using maxlength on an <input type="text"> 
+
+Q92. What is the relationship between the border and rule attributes?
+border controls the outer border of a table, while rules (in older HTML) controlled the internal lines
+between rows and columns — both have largely been replaced by CSS today.
+
+
+Q93. What is cell spacing and cell padding?
+Cell spacing is the gap between individual cells in a table, while cell padding is the space between a
+cell's border and its content.
+
+Q94. What is the difference between HTML and XHTML?
+XHTML is a stricter version of HTML that follows XML rules — every tag must be properly closed and
+lowercase, whereas standard HTML is more forgiving with such syntax.
+
+Q95. How many types of CSS can be included in HTML?
+There are three: inline CSS (written directly in an element's style attribute),
+ internal CSS (inside a<style> tag in the head), 
+and external CSS (linked from a separate .css file).
+
+Q96. What are logical and physical tags in HTML?
+Logical tags describe meaning, like <strong> for importance, 
+while physical tags only describe appearance, 
+like <b> for bold — logical tags are generally preferred for accessibility.
+
+
+Q97. How can you apply JavaScript to a web page?
+You can add JavaScript inline using the <script> tag directly in the HTML, 
+or link to an external file using 
+<script src="script.js"></script>
+
+
+Q98. How to make a radio button and checkbox, and how do you implement them?
+<input type="radio" name="gender" value="male"> Male
+<input type="checkbox" name="subscribe"> Subscribe
+
+Radio buttons are grouped using the same name so only one can be selected, while checkboxes work
+independently and allow multiple selections.
+
+
+Q99. What is the main reason or advantage of the label tag?
+The <label> tag improves usability and accessibility — it lets users click on the label text itself to
+activate the related input, which is especially helpful for checkboxes, radio buttons, and screen
+readers.
+
+
+Q100. How will you implement it so that clicking submit sends your form data in the URL?
+You set the form's method attribute to get ,
+<form method="get">
+This appends the form data as query parameters in the URL when submitted.
